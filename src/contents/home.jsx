@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import Typewriter from 'typewriter-effect';
 import pic from '../img/gh.jpeg';
-import Social from '../components/social';
+// import Social from '../components/social';
 
 class Home extends Component {
   render() {
@@ -20,7 +20,6 @@ class Home extends Component {
       Right now I am working on small projects just for learning purposes.
       </p>
       <Typewriter options={options} />
-        <Social />
       </div>
     );
   }

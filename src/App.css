@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700&display=swap');
 :root {
-  --sidebar-flex:1.5;
+  --sidebar-flex:1;
   --condiv-flex:6;
   --fontsize-p:1.2rem;
   --fontsize-nav:1.6rem;
@@ -26,15 +26,16 @@ min-height: 100vh;
 {
 padding: 100px ;
 background-color: #f4f5f9;
-/*flex:var(--condiv-flex);*/
+flex:var(--condiv-flex);
 align-content: center;
 }
-nav
+.nav
 {
 padding:60px 30px 0px 30px ;
 flex:var(--sidebar-flex);
 background: white;
-/*background: linear-gradient(180deg, rgba(238,103,143,1) 50%, rgba(132,124,252,1) 80%);*/
+min-height: 100vh;
+/*background: linear-gradient(180deg, rgba(256,256,256,0) 100%, rgba(0,0,0,1) 100%);*/
 }
 a {
   color: black;
@@ -44,7 +45,7 @@ a {
 a:hover {
   color: grey;
 }
-nav ul
+.nav ul
 {
   font-size:var(--fontsize-nav) ;
   /*text-align: center;*/
@@ -52,7 +53,7 @@ nav ul
   text-decoration: none;
   /*color: white !important;*/
 }
-nav ul li
+.nav ul li
 {
   margin:40px;
 }
@@ -72,9 +73,11 @@ font-style: italic;
 .social
 {
 position: absolute;
-margin-top: 20px;
+/*margin-top: 20px;*/
 display: flex;
-bottom: 40px;
+/*bottom: 100px;*/
+position: sticky;
+    top: 0px;
 }
 .social i
 {
@@ -84,6 +87,28 @@ color: #9a9b9c;
 }
 
 .social i:hover
+{
+color: #ffffff;
+}
+
+.call
+{
+position: absolute;
+/*margin-top: 20px;*/
+display: flex;
+/*bottom: 40px;*/
+text-align: center;
+
+
+}
+.call i
+{
+padding-right: 30px;
+font-size: 25px;
+color: #9a9b9c;
+}
+
+.call i:hover
 {
 color: #ffffff;
 }

@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 
 import NavItem from './nav_item';
+import Social from './social';
+import WriteCall from './write_call';
 
 class Navbar extends Component {
   constructor(props) {
@@ -20,14 +22,16 @@ activeItem = (id) => {
 };
   render() {
     return (
-      <nav>
+      <div className="nav">
+      <Social />
       <ul>
-        <NavItem item='home' link="/" activec={this.activeItem} />
-        <NavItem item='projects' link="/projects" activec={this.activeItem} />
-        <NavItem item='about' link="/about" activec={this.activeItem} />
-        <NavItem item='contact' link="/contact" activec={this.activeItem} />
+        <NavItem item='home' link="/" aktiv={this.activeItem} />
+        <NavItem item='projects' link="/projects" aktiv={this.activeItem} />
+        <NavItem item='about' link="/about" aktiv={this.activeItem} />
+        <NavItem item='contact' link="/contact" aktiv={this.activeItem} />
       </ul>
-      </nav>
+      <WriteCall />
+      </div>
     );
   }
 }

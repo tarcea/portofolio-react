@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import Wildcard from '../components/wildcard';
+// import Social from '../components/social';
 
 class Projects extends Component {
   render() {

@@ -6,7 +6,7 @@ class Wildcard extends Component {
       <div className="wildcard">
         <div className="compdet">
           <h3>{this.props.title}</h3>
-          <h4 className="secondtext">{this.props.about}</h4>
+          <p>{this.props.about}</p>
         </div>
       </div>
     );
