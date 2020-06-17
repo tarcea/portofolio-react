@@ -13,11 +13,13 @@ class Home extends Component {
           }
     return (
       <div className="condiv home">
+        <img src={pic} className="profilepic" alt='' width="110px"></img>
 
-        <img src={pic} className="profilepic" alt=''></img>
-        <div className='bloc'>Hi, I am Gheorghe Tarcea,
-        <Typewriter options={options} className='minibloc' /> developer.
-        </div>
+        <p>Hi, I am Gheorghe Tarcea... and I'm ready to jump in a <strong>Junior Developer</strong> position and
+      start building amazing applications and make this world more and more beautiful.
+      Right now I am working on small projects just for learning purposes.
+      </p>
+      <Typewriter options={options} />
         <Social />
       </div>
     );
