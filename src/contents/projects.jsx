@@ -8,10 +8,10 @@ class Projects extends Component {
     return (
       <div className="condiv">
         <h1 className="subtopic">My projects</h1>
-        <a href="https://stockholm376-rent-a-pet.herokuapp.com/" target="_blank">
+        <a href="https://stockholm376-rent-a-pet.herokuapp.com/" target="blank">
           <Wildcard title="Rent a pet" about="1 week ROR project in a team of 4 developers" />
         </a>
-        <a href="https://travel-worms.herokuapp.com/" target="_blank">
+        <a href="https://travel-worms.herokuapp.com/" target="blank">
           <Wildcard title="Travel Worms" about="2 weeks ROR project in a team of 4 developers" />
         </a>
       </div>
