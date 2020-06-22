@@ -14,10 +14,10 @@ import Projects from './contents/projects';
 
 function App() {
   return (
-    <Router>
+    <Router basename={`${process.env.PUBLIC_URL}/`}>
       <div className='app'>
         <Navbar />
-        <Route exact path="/">
+        <Route exact path="/" component={Home} >
           <Home />
         </Route>
         <Route path="/projects">
