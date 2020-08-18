@@ -2,7 +2,7 @@ import React from 'react';
 import
 {
 BrowserRouter as Router,
-Route,
+Route, Switch
 } from "react-router-dom";
 
 import './App.css';
@@ -14,17 +14,22 @@ import Projects from './contents/projects';
 
 function App() {
   return (
+
     <Router basename={`${process.env.PUBLIC_URL}/`}>
       <div className='app'>
         <Navbar />
+        <Switch>
         <Route exact path="/" component={Home} >
           <Home />
         </Route>
-        <Route path="/projects">
+        <Route path="/projects" component={Projects}>
           <Projects />
         </Route>
+        </Switch>
       </div>
+
     </Router>
+
   );
 }
 
